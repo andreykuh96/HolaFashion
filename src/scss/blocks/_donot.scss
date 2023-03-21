@@ -1,0 +1,102 @@
+.donot {
+    padding: rem(20) 0 rem(20) 0;
+    background-color: #91916C;
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+}
+.donot__title {
+    max-width: em(410, 48);
+    margin: 0 auto em(170, 48) auto;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: rem(48);
+    line-height: 139%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+.donot__form {
+    display: grid;
+    grid-template-areas: 'first second' 'email email' 'subject subject' 'btn btn';
+    row-gap: 25px;
+    column-gap: 10px;
+    @media (max-width: 500px) {
+        grid-template-areas: 'first first' 'second second' 'email email' 'subject subject' 'btn btn';
+    }
+}
+.donot__firstname {
+    grid-area: first;
+    background: rgba(225, 225, 194, 0.4);
+    border-radius: 8px;
+    padding: 15px 25px;
+    &:focus {
+        font-size: rem(20);
+        background-color: #fff;
+    }
+    &::placeholder {
+        font-size: rem(20);
+        line-height: 135.5%;
+        opacity: 1;
+        color: #fff;
+    }
+}
+.donot__secondname {
+    grid-area: second;
+    background: rgba(225, 225, 194, 0.4);
+    border-radius: 8px;
+    padding: 15px 25px;
+    &:focus {
+        font-size: rem(20);
+        background-color: #fff;
+    }
+    &::placeholder {
+        font-size: rem(20);
+        line-height: 135.5%;
+        opacity: 1;
+        color: #fff;
+    }
+}
+.donot__email {
+    grid-area: email;
+    background: rgba(225, 225, 194, 0.4);
+    border-radius: 8px;
+    padding: 15px 25px;
+    &:focus {
+        font-size: rem(20);
+        background-color: #fff;
+    }
+    &::placeholder {
+        font-size: rem(20);
+        line-height: 135.5%;
+        opacity: 1;
+        color: #fff;
+    }
+}
+.donot__subject {
+    grid-area: subject;
+    background: rgba(225, 225, 194, 0.4);
+    border-radius: 8px;
+    padding: 15px 25px;
+    &:focus {
+        font-size: rem(20);
+        background-color: #fff;
+    }
+    &::placeholder {
+        font-size: rem(20);
+        line-height: 135.5%;
+        opacity: 1;
+        color: #fff;
+    }
+}
+.donot__btn {
+    padding: 15px 0;
+    grid-area: btn;
+    background: #E5A985;
+    border-radius: 8px;
+    font-size: rem(20);
+    line-height: 135.5%;
+    color: #FFFFFF;
+}

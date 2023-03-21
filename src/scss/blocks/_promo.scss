@@ -1,0 +1,105 @@
+.promo {
+    min-height: 100vh;
+    .container {
+        position: relative;
+        min-height: 100vh;
+        padding-top: em(120, 16);
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @media (max-width: em(500, 16)) {
+            justify-content: center;
+        }
+    }
+}
+.promo__content {
+    max-width: em(640, 16);
+}
+.pormo__img {
+    width: prc(544, 1440 + 30);
+    height: prc(858, 1020);
+    position: absolute;
+    bottom: 0;
+    left: rem(-70);
+    object-fit: contain;
+    @media (max-width: em(900, 16)) {
+        display: none;
+    }
+}
+.promo__title {
+    max-width: em(603, 56);
+    margin-bottom: em(39, 56);
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-size: rem(56);
+    line-height: 139%;
+    letter-spacing: 0.02em;
+    color: #E5A985;
+    @media (max-width: 500px) {
+        font-size: rem(32);
+    }
+}
+.promo__text {
+    max-width: em(576, 24);
+    margin-bottom: em(67, 24);
+    font-size: rem(24);
+    line-height: 171%;
+    letter-spacing: 0.02em;
+    color: #4A4747;
+    @media (max-width: 500px) {
+        font-size: rem(14);
+    }
+}
+.promo__form {
+    display: flex;
+    column-gap: 15px;
+    @media (max-width: em(500, 16)) {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}
+.promo__email {
+    flex: 1 1 auto;
+    padding: em(15, 20) 0 em(15, 20) em(30, 20);
+    background: #E5E5E5;
+    border-radius: 8px 0px 0px 8px;
+    font-weight: 700;
+    font-size: rem(20);
+    line-height: 135.5%;
+    color: #434343;
+    @media (max-width: em(500, 16)) {
+        border-radius: 8px;
+        font-size: rem(14);
+    }
+    &::placeholder {
+        color: #C4C4C4;
+    }
+    &:focus {
+        box-shadow: 0 0 10px 0;
+    }
+}
+.promo__btn {
+    padding: em(15, 20) em(20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #91916C;
+    border-radius: 0px 8px 8px 0px;
+    font-weight: 700;
+    font-size: rem(20);
+    line-height: 135.5%;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: 1px solid black;
+    @media (max-width: 500px) {
+        border-radius: 8px;
+        font-size: rem(14);
+    }
+    &:hover {
+        box-shadow: 0 0 10px 0 #91916C;
+    }
+    &:active {
+        opacity: 0.5;
+    }
+}

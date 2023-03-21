@@ -1,0 +1,45 @@
+
+@import 'css/rebootcss';
+@import 'css/iconfonts.css';
+@import 'scss/functions/functions';
+@import 'scss/mixins/adaptive';
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Playfair+Display:wght@700&family=Poppins:wght@700&display=swap');
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+}
+
+.wrapper {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: rem(1250 + 30);
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+// @media (max-width: em(1087, 16)) {
+//     .container {
+//         max-width: rem(970);
+//     }
+// }
+// @media (max-width: em(991.98, 16)) {
+//     .container {
+//         max-width: rem(750);
+//     }
+// }
+// @media (max-width: em(479.98, 16)) {
+// }
+
+@import './scss/blocks/header';
+@import './scss/blocks/promo';
+@import './scss/blocks/product';
+@import './scss/blocks/fullscreen';
+@import './scss/blocks/blog';
+@import './scss/blocks/contacts';
+@import './scss/blocks/donot';
